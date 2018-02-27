@@ -15,7 +15,8 @@ config :gigalixir_getting_started, GigalixirGettingStartedWeb.Endpoint,
   secret_key_base: "YbvTQa/w6m9GwiFuVEp76H8MgaXGqh0G/1aMI+3w+QEqMM9Emilm3OKhEWPOXnfc",
   render_errors: [view: GigalixirGettingStartedWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: GigalixirGettingStarted.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+           adapter: Phoenix.PubSub.PG2],
+  check_origin: ["https://full-annual-darwinsfox.gigalixirapp.com"]
 
 # Configures Elixir's Logger
 config :logger, :console,
